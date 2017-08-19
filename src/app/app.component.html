@@ -1,3 +1,28 @@
-<h1>
-  {{title}}
-</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 offset-md-1">
+      <div class="jumbotron" >
+        <h1>Add a team member</h1>
+        <div class="form-group">
+          <label for="">Name</label>
+          <input type="text" [(ngModel)]="name" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="">Technology</label>
+          <input  type="text" [(ngModel)]="technology" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="">Bio</label>
+          <input type="text" [(ngModel)]="bio" class="form-control" >
+        </div>
+        <div class="form-group">
+          <button class="btn btn-primary" (click)="addMemberToTeam()">Add</button>
+        </div>
+      </div>
+      <app-developer *ngFor="let teamMember of teamMembers; let i = index" [developerIndex]="i" [developer]="teamMember" (deleteDeveloper)="deleteDev($event)">
+
+        asdasdflokkdfi
+      </app-developer>
+    </div>
+  </div>
+</div>

@@ -4,10 +4,16 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { TeamComponent } from './team/team.component';
+import { DeveloperComponent } from './developer/developer.component';
+import { SimpleDirective } from './simple-directive/simple-directive.directive';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TeamComponent,
+    DeveloperComponent,
+    SimpleDirective
   ],
   imports: [
     BrowserModule,
